@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="/javascript/jquery-3.5.1.min.js"></script>
+    <title>Mcafe</title>
+</head>
+<body>
+    <header>
+        <div class="navbar navbar-expand-md">
+            <h1 class="navbar-brand">Mcafe</h1>
+            <ul class="navbar-nav mobnav dtnav">
+                <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Order</a></li>
+                <li class="nav-item"><a class="nav-link"href="#">Reservation</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Location</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+            <button type="menu" class="menubtn"><i class="fa fa-bars" aria-hidden="true"></i></button>
+        </div>
+    </header>
+    <main>
+        <div class="hero container-fluid">
+            <h2>Cooking with LOVE provides food for soul..</h2>
+        </div>
+        <div class="menu">
+            <h4><span>Menu</span></h4>
+            <div class="menu-container">
+                <div class="menu-item main-course">
+                    <button type="button" class="menutoggle" data-target="main-course-item">
+                            <h5>Main Course</h5><i class="fa fa-chevron-down" aria-hidden="true"></i>
+                    </button>
+                    <div class="main-course-item hide">
+                        <div class="rices">
+                            <button type="button" class="menutoggle" data-target="rice-item"> 
+                                    <h6>Rices</h6><i class="fa fa-chevron-down" aria-hidden="true"></i>
+                            </button>
+                            <div class="rice-item hide">
+                                <div class="card container">
+                                    <div class="cardoverlay"></div>
+                                    <div class="imgbox container">
+                                        <img src="images/brice.png" alt="" srcset="">
+                                    </div>
+                                    <p> 200 &#8377  </p>
+                                    <h3 class="card-title">Chicken Biriyani</h3>
+                                </div>
+                                <div class="card container">
+                                    <div class="cardoverlay"></div>
+                                    <div class="imgbox container">
+                                        <img src="images/frice.png" alt="" srcset="">
+                                    </div>
+                                    <p> 200 &#8377  </p>
+                                    <h3 class="card-title">Chicken Biriyani</h3>
+                                </div>
+                                <div class="card container">
+                                    <div class="cardoverlay"></div>
+                                    <div class="imgbox container">
+                                        <img src="images/mandhi.png" alt="" srcset="">
+                                    </div>
+                                    <p> 200 &#8377  </p>
+                                    <h3 class="card-title">Chicken Biriyani</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chicken-dishes">
+                            <button type="button" class="menutoggle" data-target="chickendish-item">
+                                    <h6>Chicken Dishes</h6><i class="fa fa-chevron-down" aria-hidden="true"></i>
+                            </button>
+                            <div class="chickendish-item hide">
+                                <div class="card container">
+                                    <div class="cardoverlay"></div>
+                                    <div class="imgbox container">
+                                        <img src="images/alfaham.png" alt="" srcset="">
+                                    </div>
+                                    <p> 200 &#8377  </p>
+                                    <h3 class="card-title">Chicken Biriyani</h3>
+                                </div>
+                               <div class="card container">
+                                    <div class="cardoverlay"></div>
+                                    <div class="imgbox container">
+                                        <img src="images/tandoori.png" alt="" srcset="">
+                                    </div>
+                                    <p> 200 &#8377  </p>
+                                    <h3 class="card-title">Chicken Biriyani</h3>
+                                </div>
+                                <div class="card container">
+                                    <div class="cardoverlay"></div>
+                                    <div class="imgbox container">
+                                        <img src="images/tikkachk.png" alt="" srcset="">
+                                    </div>
+                                    <p> 200 &#8377  </p>
+                                    <h3 class="card-title">Chicken Biriyani</h3>
+                                </div>
+                                <div class="card container">
+                                    <div class="cardoverlay"></div>
+                                    <div class="imgbox container">
+                                        <img src="images/roastedchk.png" alt="" srcset="">
+                                    </div>
+                                    <p> 200 &#8377  </p>
+                                    <h3 class="card-title">Chicken Biriyani</h3>
+                                </div>
+                                <div class="card container">
+                                    <div class="cardoverlay"></div>
+                                    <div class="imgbox container">
+                                        <img src="images/friedchk.png" alt="" srcset="">
+                                    </div>
+                                    <p> 200 &#8377  </p>
+                                    <h3 class="card-title">Chicken Biriyani</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item beverages">
+                    <button type="button" class="menutoggle" data-target="beverages-item">
+                            <h5>Beverages</h5><i class="fa fa-chevron-down" aria-hidden="true"></i>
+                    </button>
+                    <div class="beverages-item hide">
+                        <div class="hot">
+                            <button type="button" class="menutoggle" data-target="hot-item"> 
+                                    <h6>Hot</h6><i class="fa fa-chevron-down" aria-hidden="true"></i>
+                            </button>
+                            <div class="hot-item hide">
+                                <div class="card container">
+                                   <div class="cardoverlay"></div>
+                                   <div class="imgbox container">
+                                       <img src="images/tea.png" alt="" srcset="">
+                                   </div>
+                                   <p> 200 &#8377  </p>
+                                   <h3 class="card-title">Chicken Biriyani</h3>
+                               </div>
+                               <div class="card container">
+                                   <div class="cardoverlay"></div>
+                                   <div class="imgbox container">
+                                       <img src="images/coffee.png" alt="" srcset="">
+                                   </div>
+                                   <p> 200 &#8377  </p>
+                                   <h3 class="card-title">Chicken Biriyani</h3>
+                               </div>
+                               <div class="card container">
+                                   <div class="cardoverlay"></div>
+                                   <div class="imgbox container">
+                                       <img src="images/hotchocolate.png" alt="" srcset="">
+                                   </div>
+                                   <p> 200 &#8377  </p>
+                                   <h3 class="card-title">Chicken Biriyani</h3>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="cold">
+                            <button type="button" class="menutoggle" data-target="cold-item">
+                                    <h6>Cold</h6><i class="fa fa-chevron-down" aria-hidden="true"></i>
+                            </button>
+                            <div class="cold-item hide">
+                                <div class="card container">
+                                   <div class="cardoverlay"></div>
+                                   <div class="imgbox container">
+                                       <img src="images/juice.png" alt="" srcset="">
+                                   </div>
+                                   <p> 200 &#8377  </p>
+                                   <h3 class="card-title">Chicken Biriyani</h3>
+                               </div>
+                               <div class="card container">
+                                   <div class="cardoverlay"></div>
+                                   <div class="imgbox container">
+                                       <img src="images/softdrinks.png" alt="" srcset="">
+                                   </div>
+                                   <p> 200 &#8377  </p>
+                                   <h3 class="card-title">Chicken Biriyani</h3>
+                               </div>
+                               <div class="card container">
+                                   <div class="cardoverlay"></div>
+                                   <div class="imgbox container">
+                                       <img src="images/mocktail.png" alt="" srcset="">
+                                   </div>
+                                   <p> 200 &#8377  </p>
+                                   <h3 class="card-title">Chicken Biriyani</h3>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-item desserts">
+                    <button type="button" class="menutoggle" data-target="dessert-item">
+                            <h5>Desserts</h5><i class="fa fa-chevron-down" aria-hidden="true"></i>
+                    </button>
+                    <div class="dessert-item hide">
+                       <div class="card container">
+                           <div class="cardoverlay"></div>
+                           <div class="imgbox container">
+                               <img src="images/cookies.png" alt="" srcset="">
+                           </div>
+                           <p> 200 &#8377  </p>
+                           <h3 class="card-title">Chicken Biriyani</h3>
+                       </div>
+                       <div class="card container">
+                           <div class="cardoverlay"></div>
+                           <div class="imgbox container">
+                               <img src="images/cake.png" alt="" srcset="">
+                           </div>
+                           <p> 200 &#8377  </p>
+                           <h3 class="card-title">Chicken Biriyani</h3>
+                       </div>
+                       <div class="card container">
+                           <div class="cardoverlay"></div>
+                           <div class="imgbox container">
+                               <img src="images/icecream.png" alt="" srcset="">
+                           </div>
+                           <p> 200 &#8377  </p>
+                           <h3 class="card-title">Chicken Biriyani</h3>
+                       </div>
+                    </div>
+                </div>
+            </div>
+
+             
+        </div>
+        <div class="order">
+            <h4><span>Order</span></h4>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-md-4 d-flex">
+                        <div class="orderitem">
+                            <a href="#">
+                                <img src="/images/swiggy.svg" alt="" >
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 d-flex">
+                        <div class="orderitem ">
+                            <a href="#">
+                                <img src="/images/zomato.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 d-flex">
+                        <div class="orderitem">
+                            <a href="#">
+                                <img src="/images/ubereats.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="reserve">
+            <h4><span>Reservation</span></h4>
+            <input type="button" value="Reserve Your Space" class="btn" data-target="#modal">
+            <div class="modal" id="modal">
+                <div class="modal-dialog-centered modal-md modal-dialog">
+                    <div class="modal-content">
+                        <div class="mheader">
+                            <h5>Reserve Your Space</h5>
+                            <button type="button" class="mclose"><i class="fa fa-times" aria-hidden="true"></i></button>
+                        </div>
+                        <div class="mbody">
+                            <form class="forms was-validated" action="">
+                                <div class="form-group">
+                                    <input type="tel" class="form-control-sm" placeholder="Mobile Number" minlength="10" maxlength="10" required>
+                                    <div class="invalid-feedback">Invalid</div>
+                                    <div class="valid-feedback">Valid</div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="number" class="form-control-sm" placeholder="Number of Seats" min="1" required>
+                                    <div class="invalid-feedback">Invalid</div>
+                                    <div class="valid-feedback">Valid</div>
+                                </div>
+                                <input type="button" value="Reserve" class="form-control-sm">
+                            </form>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="location">
+            <h4><span>Location</span></h4>
+            <p>Downhill Malappuram</p>
+            <p>Kerala</p>
+        </div>
+        <div class="contact">
+            <h4><span>Contact</span></h4>
+            <a href=""><i class="fa fa-phone" aria-hidden="true"></i></a>
+            <ul>
+                <li class="list-inline-item"><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                 <li class="list-inline-item"><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                  <li class="list-inline-item"><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+        <div class="alertoverlay"></div>
+        <div class="modal" id="alert" >
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <h6></h6>
+                    <button type="button" class="form-control">Ok</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <hr>
+        <a href="">Privacy Policy</a>
+        <p>&copy;2020 Mcafe</p>
+
+    </footer>
+    <script src="/javascript/script.js"></script>
+</body>
+</html>
