@@ -1,14 +1,11 @@
-$('.menubtn').on("click",function(){
+$(document).ready(function(){
+    $('.menubtn').on("click",function(){
     $(".mobnav").toggle();
 })
 
-
-
-
-
 $('.menutoggle').click(function(){
     var target=$(this).attr("data-target");
-    $("."+target).toggleClass("hide");
+    $("."+target).slideToggle();
     if($(this).children("i").hasClass("fa-chevron-down")){
         $(this).children("i").removeClass("fa-chevron-down");
         $(this).children("i").addClass("fa-chevron-up");
@@ -17,20 +14,21 @@ $('.menutoggle').click(function(){
         $(this).children("i").removeClass("fa-chevron-up");
         $(this).children("i").addClass("fa-chevron-down");
     }
+    
     var vw=$(window).width();
     if(vw>=768){
-        if(target=="beverages-item"){
-            $(".main-course").toggle();
+        if(target=="beverages-item1"){
+            $(".main-course").toggle(500);
         }
-        if(target=="chickendish-item"){
-            $(".rices").toggle();
+        if(target=="chickendish-item1"){
+            $(".rices").toggle(500);
         }
-        if(target=="cold-item"){
-            $(".hot").toggle();
+        if(target=="cold-item1"){
+            $(".hot").toggle(500);
         }
-        if(target=="dessert-item"){
-            $(".main-course").toggle();
-            $(".beverages").toggle();
+        if(target=="dessert-item1"){
+            $(".main-course").toggle(500);
+            $(".beverages").toggle(500);
         }
     }
 })
@@ -76,6 +74,10 @@ $('.mbody input[type="button"]').on("click",function(){
     }
     
 })
+
+
+})
+
 
 
 

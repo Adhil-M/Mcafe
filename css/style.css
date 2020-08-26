@@ -127,9 +127,7 @@ span{
 .menu .fa{
     font-size: 10px;
 }
-.hide{
-    display: none !important;
-}
+
 .menu-container{
     position: relative;
     display: grid;
@@ -404,7 +402,7 @@ footer a{
 }
 @media (min-width:768px){
     .hero{
-        background-image:url(/images/herodt.png);
+        background-image:url(../images/herodt.png);
         padding-top: 45vh;
         padding-left:5% ;
         padding-right: 35%;
