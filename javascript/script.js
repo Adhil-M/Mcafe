@@ -2,6 +2,8 @@ $(document).ready(function(){
     $('.menubtn').on("click",function(){
     var width=$(".mobnav").width();
     if(width==0){
+        $(this).children("i").removeClass("fa-bars");
+        $(this).children("i").addClass("fa-times");
         $(".mobnav").animate(
         {
             width:"80%",
@@ -10,6 +12,8 @@ $(document).ready(function(){
     )
     }
     else{
+        $(this).children("i").removeClass("fa-times");
+        $(this).children("i").addClass("fa-bars");
         $(".mobnav").animate(
         {
             width:"0",

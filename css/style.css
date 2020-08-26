@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&display=swap');
 body,html{
     padding: 0;
     margin: 0;
@@ -6,14 +7,24 @@ body,html{
     overflow-x: hidden;
 }
 :root{
-    --heading:rgb(255, 255, 255);
-    --headingline:rgb(255, 255, 255);
+    --heading:rgb(0, 0, 0);
+    --headingline:rgb(192, 192, 192);
+    --activec:rgb(255, 0, 0);
+    --tabclr:rgb(214, 214, 214);
+    --tabtxtclr:rgb(0, 0, 0);
+    --menuitemclr:rgb(0, 0, 0);
+    --cardtitle:rgb(0, 0, 0);
+    --cardtext:rgb(255, 255, 255);
+    --contacticon:rgb(105, 105, 105);
+    --contacticonhover:rgb(255, 255, 255);
+    --footerclr:white;
+    --footerbg:rgb(53, 53, 53);
 }
 /*header*/
 
 
 .mobnav{
-    background: rgba(0,0,0,0.7);
+    background: rgba(0, 0, 0, 0.8);
     width: 0;
     padding-left: 0;
     padding-top: 20%;
@@ -24,7 +35,7 @@ body,html{
     z-index: -1;
 }
 .navbar{
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.8);
     position: fixed;
     width: 100%;
     padding: 0;
@@ -32,6 +43,8 @@ body,html{
 }
 .navbar-brand{
     margin: 0px 15px;
+    font-size: 25px;
+    font-family: 'Oleo Script', cursive;
     color: white;
 }
 .menubtn{
@@ -52,7 +65,7 @@ body,html{
     color: rgb(190, 190, 190);
 }
 .cactive{
-    color: rgb(255, 0, 149) !important;
+    color: var(--activec) !important;
     transform: scale(1.2);
 }
 /*headerover*/
@@ -79,8 +92,8 @@ body,html{
 /*heroover*/
 
 .menu,.order,.reserve,.location,.contact{
-    color: rgb(255, 255, 255);
-    background-color: rgb(63, 63, 63);
+    color: var(--tabtxtclr);
+    background-color: var(--tabclr);
     text-align: center;
 } 
 /*linedh4*/
@@ -100,7 +113,7 @@ h4::before{
 }
 span{
     padding:0px 10px ;
-    background-color:rgb(63, 63, 63) ;
+    background-color:var(--tabclr) ;
     height: min-content;
     position: relative;
     z-index: 2;
@@ -121,17 +134,19 @@ span{
 
 .menu h6{
     display: inline-block;
-    color: rgb(216, 214, 214);
+    color: var(--menuitemclr);
     font-size:12px;
     margin-right: 10px;
 }
 .menu h5{
-   display: inline-block;
+    color: var(--menuitemclr);
+    display: inline-block;
     font-size:16px;
     margin-right: 10px; 
 }
 .menu .fa{
     font-size: 10px;
+    color: var(--menuitemclr);
 }
 
 .menu-container{
@@ -208,7 +223,7 @@ span{
     margin-top: 5px;
     transition: 500ms;
     font-size: 15px;
-    color: rgb(255, 255, 255);
+    color: var(--cardtitle);
     z-index: 3;
 }
 .imgbox{
@@ -234,7 +249,7 @@ span{
     height: 100%;
 }
 .card p{
-    color: white;
+    color: var(--cardtext);
     z-index: 3;
     font-size: 20px;
     display: none;
@@ -242,6 +257,7 @@ span{
 }
 .card:hover .card-title{
     transform: scale(1.2) translateY(-40vw);
+    color: white;
 }
 .card:hover .cardoverlay{
     display: initial; 
@@ -260,6 +276,7 @@ span{
 }
 .reserve input{
     color: white;
+    margin: 20px auto;
     background: rgb(37, 37, 37);
 }
 .reserve input:focus{
@@ -344,24 +361,25 @@ span{
     padding: 0;
 }
 .contact i{
-    color: white;
+    color: var(--contacticon);
     font-size: 20px;
 }
+.contact i:hover{
+    color: var(--contacticonhover);
+}
 footer{
+    padding-top: 20px;
     font-size: 15px;
     text-align: center;
-    background-color: rgb(17, 15, 15);
-    color: white;
+    background-color: var(--footerbg);
+    color: var(--footerclr);
     height: 600px;
 }
 footer p{
-    margin-bottom: 2px;
-}
-hr{
-    margin: 1px;
+    margin: 20px auto;
 }
 footer a{
-    color: white;
+    color: var(--footerclr);
 }
 
 
@@ -396,6 +414,7 @@ footer a{
     }
     .mobnav{
         display: flex !important;
+        background: transparent;
         flex-direction: row;
         justify-content: space-evenly;
         padding-left: 20%;
@@ -419,6 +438,8 @@ footer a{
         display: none;
     }
     .menu-container{
+        margin-top: 30px;
+        padding-bottom: 30px;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: repeat(1,auto);
         grid-template-areas: 
