@@ -191,36 +191,6 @@ span{
 .desserts{
     grid-area: desserts;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*card*/
 .card{
     position: relative;
@@ -382,7 +352,7 @@ footer{
     text-align: center;
     background-color: rgb(17, 15, 15);
     color: white;
-    height: 1000px;
+    height: 600px;
 }
 footer p{
     margin-bottom: 2px;
