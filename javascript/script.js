@@ -1,6 +1,23 @@
 $(document).ready(function(){
     $('.menubtn').on("click",function(){
-    $(".mobnav").toggle();
+    var width=$(".mobnav").width();
+    if(width==0){
+        $(".mobnav").animate(
+        {
+            width:"80%",
+            paddingLeft:"20%"
+        }
+    )
+    }
+    else{
+        $(".mobnav").animate(
+        {
+            width:"0",
+            paddingLeft:"0"
+        }
+    )
+    }  
+    
 })
 
 $('.menutoggle').click(function(){
@@ -74,7 +91,51 @@ $('.mbody input[type="button"]').on("click",function(){
     }
     
 })
-
+$(".nav-link").on("click",function(){
+    var target=$(this).attr("data-target")
+    $(".nav-link").removeClass("cactive");
+    $.fn.changenav(this);
+    $('html, body').animate({
+        scrollTop: $(target).offset().top-60
+        }, '500');
+})
+$.fn.changenav=function(a)
+{
+    $(".nav-link").removeClass("cactive");
+    $(a).addClass("cactive");
+}
+$(window).scroll(function(){
+    var x=$("html, body").scrollTop();
+    var h=$(".hero").offset().top;
+    var m=$(".menu").offset().top;
+    var o=$(".order").offset().top;
+    var r=$(".reserve").offset().top;
+    var l=$(".location").offset().top;
+    var c=$(".contact").offset().top;
+    console.log("menu: " ,m,o,r,l,c)
+    x+=61;
+    console.log(x)
+    if(x>=h && x<m){
+        $.fn.changenav(".homen")
+    }
+    if(x>=m && x<o){
+        $.fn.changenav(".menun")
+    }
+    if(x>=o && x<r){
+        $.fn.changenav(".ordern")
+    }
+    if(x>=r && x<l){
+        $.fn.changenav(".reserven")
+    }
+    if(x>=l && x<c){
+        $.fn.changenav(".locationn")
+    }
+    if(x>=c){
+        $.fn.changenav(".contactn")
+    }
+    
+    
+});
 
 })
 
