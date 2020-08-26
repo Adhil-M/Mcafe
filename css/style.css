@@ -29,7 +29,7 @@ body,html{
     padding-left: 0;
     padding-top: 20%;
     position: fixed;
-    top: 40px;
+    top: 46.8px;
     right: 0;
     height: 100vh;
     z-index: -1;
@@ -328,6 +328,7 @@ span{
     width: 100%;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.8);
+    z-index: 10;
 }
 #alert .modal-dialog .modal-content{
     display: flex;
